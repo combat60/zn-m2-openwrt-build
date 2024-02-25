@@ -18,7 +18,7 @@
 <br>
 
 ## ipq6000固件特性：  
-0.默认后台地址192.168.100.1；默认后台密码password。  
+0.默认后台地址192.168.1.1；默认后台密码password。  
 1.添加cpu温度、频率以及npu占用率显示。  
 2.修复nat环回功能失效bug。  
 3.cpu超频至1.6ghz，跑分2w+。  
@@ -27,21 +27,4 @@
 6.释放保留内存，可用内存增加50m。  
 7.此页面发布的ipq6000固件不集成无线功能。  
 
-## 集成插件列表
-luci-app-ssr-plus  
-luci-app-openclash  
-luci-app-ddns  
-luci-app-msd_lite  
-luci-app-wol  
-luci-app-upnp  
-luci-app-uhttpd  
-luci-app-cpufreq  
-luci-app-ipsec-vpnd  
-luci-app-openvpn-server  
-luci-app-zerotier  
 
-## 固件预览
-![image](https://github.com/sdf8057/cloudbuild/blob/main/pic/overview.png)
-
-## 微信打赏
-![image](https://github.com/sdf8057/cloudbuild/blob/main/pic/reward_qrcode.png)
