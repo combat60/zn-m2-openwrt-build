@@ -180,7 +180,7 @@ jobs:
       uses: ophub/delete-releases-workflows@main
       with:
         delete_releases: true
-        prerelease_option: true
+        prerelease_option: false
         releases_keep_latest: 3
         delete_workflows: true
         workflows_keep_day: 3
