@@ -10,8 +10,9 @@
 # Description: OpenWrt DIY script part 2 (After Update feeds)
 #
 #替换golang
-#rm -rf feeds/packages/lang/golang
+sudo rm -rf feeds/packages/lang/golang
 #svn co https://github.com/coolsnowwolf/packages/tree/master/lang/golang feeds/packages/lang/golang
+echo 'src-git custom https://github.com/coolsnowwolf/packages/tree/master/lang/golang.git;packages/lang/golang' >>feeds/packages/lang/golang
 #优先安装 passwall 源
 ./scripts/feeds install -a -f -p passwall_packages
 ./scripts/feeds install -a -f -p passwall_luci
