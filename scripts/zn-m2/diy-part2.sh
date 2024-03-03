@@ -12,10 +12,7 @@
 #替换golang
 git clone https://github.com/coolsnowwolf/packages/ ~/lean-packages
 mv ./feeds/packages/lang/golang/ ./feeds/packages/lang/golang.bak/
-cp -r ~/lean-packages/lang/golang/ ./feeds/packages/lang/golang/
-#sudo rm -rf feeds/packages/lang/golang
-#svn co https://github.com/coolsnowwolf/packages/tree/master/lang/golang feeds/packages/lang/golang
-#echo 'src-git custom https://github.com/coolsnowwolf/packages/tree/master/lang/golang.git;packages/lang/golang' >>feeds/packages/lang/golang
+cp -r ~/lean-packages/lang/golang/ ./feeds/packages/lang/
 #优先安装 passwall 源
 ./scripts/feeds install -a -f -p passwall_packages
 ./scripts/feeds install -a -f -p passwall_luci
