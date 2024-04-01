@@ -155,9 +155,10 @@ jobs:
     - name: Organize files
       id: organize
       run: |
-        cd openwrt/bin/targets/*/*
-        mv -f openwrt/bin/packages/* packages
+        cd openwrt
+        mv -f bin/packages/* packages
         tar -zcf Packages.tar.gz packages
+        cd openwrt/bin/targets/*/*
         rm -rf packages feeds.buildinfo version.buildinfo config.buildinfo
         echo "FIRMWARE=$PWD" >> $GITHUB_ENV
         echo "status=success" >> $GITHUB_OUTPUT
