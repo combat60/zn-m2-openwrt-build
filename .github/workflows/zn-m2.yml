@@ -183,10 +183,7 @@ jobs:
         tag_name: ${{ steps.tag.outputs.release_tag }}
         prerelease: false
         body_path: release.txt
-        files: |
-         ${{ env.FIRMWARE }}/*.ubi
-         ${{ env.FIRMWARE }}/*.bin
-         ${{ env.FIRMWARE }}/*.tar.gz
+        files: ${{ env.FIRMWARE }}/*
 
     - name: Delete releases and workflows runs
       uses: ophub/delete-releases-workflows@main
