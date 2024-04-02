@@ -155,9 +155,10 @@ jobs:
     - name: Organize files
       id: organize
       run: |
-        cd openwrt/bin/targets/*/*
-        mv -f workdir/openwrt/bin/packages/*/*/*.ipk packages
-        tar -zcf ipks.tar.gz packages
+        cd openwrt/bin
+        tar -zcf Packages.tar.gz packages
+        mv -f Packages.tar.gz ./targets/*/*
+        cd ./targets/*/*
         rm -rf packages feeds.buildinfo version.buildinfo config.buildinfo
         echo "FIRMWARE=$PWD" >> $GITHUB_ENV
         echo "status=success" >> $GITHUB_OUTPUT
@@ -185,9 +186,9 @@ jobs:
         prerelease: false
         body_path: release.txt
         files: |
-           ${{ env.FIRMWARE }}/*.bin
-           ${{ env.FIRMWARE }}/*.ubi
-           ${{ env.FIRMWARE }}/*.tar.gz
+         ${{ env.FIRMWARE }}/*.bin
+         ${{ env.FIRMWARE }}/*.ubi
+         ${{ env.FIRMWARE }}/*.tar.gz
 
     - name: Delete releases and workflows runs
       uses: ophub/delete-releases-workflows@main
