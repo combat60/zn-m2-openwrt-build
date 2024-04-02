@@ -156,7 +156,7 @@ jobs:
       id: organize
       run: |
         cd openwrt/bin/targets/*/*
-        mv -f packages/*/*/*.ipk packages
+        mv -f packages/*/*.ipk packages
         tar -zcf Packages.tar.gz packages
         rm -rf packages feeds.buildinfo version.buildinfo config.buildinfo
         echo "FIRMWARE=$PWD" >> $GITHUB_ENV
