@@ -110,12 +110,8 @@ jobs:
         rm -rf feeds/luci/themes/luci-theme-design
         rm -rf feeds/packages/net/adguardhome
         rm -rf feeds/adgurd/luci-app-adguardhome
-        rm -rf feeds/packages/net/mwan3
-        rm -rf feeds/luci/applications/luci-app-mwan3
         mv -f feeds/kiddin9/adguardhome feeds/packages/net/adguardhome
         mv -f feeds/kiddin9/luci-app-adguardhome feeds/adgurd/luci-app-adguardhome
-        mv -f feeds/kiddin9/mwan3 feeds/packages/net/mwan3
-        mv -f feeds/kiddin9/luci-app-mwan3 feeds/luci/applications/luci-app-mwan3
         rm -rf feeds/kiddin9
         git clone https://github.com/sbwml/packages_lang_golang -b 22.x feeds/packages/lang/golang
         git clone https://github.com/combat60/luci-theme-design-diy feeds/luci/themes/luci-theme-design
