@@ -8,4 +8,4 @@ src-git passwall2 https://github.com/xiaorouji/openwrt-passwall2.git;main
 # src-git ddnsgo https://github.com/sirpdboy/luci-app-ddns-go.git;main
 src-git lucky https://github.com/gdy666/luci-app-lucky.git;main
 src-git adgurd https://github.com/combat60/luci-app-adguardhome.git;main
-src-git kiddin9 https://github.com/kiddin9/openwrt-packages.git;master
+src-git kiddin9 https://github.com/kiddin9/kwrt-packages.git;main
