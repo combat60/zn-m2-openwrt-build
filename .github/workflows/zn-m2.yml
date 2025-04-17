@@ -107,9 +107,6 @@ jobs:
         cd openwrt
         ./scripts/feeds install -a
         rm -rf feeds/luci/themes/luci-theme-design
-        rm -rf feeds/adgurd/luci-app-adguardhome
-        mv -f feeds/kiddin9/luci-app-adguardhome feeds/adgurd/luci-app-adguardhome
-        rm -rf feeds/kiddin9
         git clone https://github.com/combat60/luci-theme-design-diy feeds/luci/themes/luci-theme-design
         
     - name: Load custom configuration
